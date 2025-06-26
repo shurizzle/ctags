@@ -35,6 +35,8 @@
 # ifndef VMS
 #  define VMS 1
 # endif
+#elif defined (__plan9__)
+# include "e_plan9.h"
 #endif
 
 

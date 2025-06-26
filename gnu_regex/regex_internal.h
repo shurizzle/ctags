@@ -420,6 +420,9 @@ static unsigned int re_string_context_at (const re_string_t *input, int idx,
 
 #ifdef WIN32
 # include <malloc.h>
+#elif defined (__plan9__)
+# define HAVE_ALLOCA 0
+# define alloca(n) NULL
 #else
 # include <alloca.h>
 #endif
