@@ -803,7 +803,7 @@ static void findKeyword (tokenInfo *const token, const keywordId keyword)
 
 static boolean parseType (tokenInfo *const token);
 
-static void parseGeneric (tokenInfo *const token, boolean declaration __unused__)
+static void parseGeneric (tokenInfo *const token, boolean declaration ctags_unused)
 {
 	unsigned int depth = 0;
 #ifdef TYPE_REFERENCE_TOOL

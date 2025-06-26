@@ -57,10 +57,10 @@
  *  to prevent warnings about unused variables.
  */
 #if (__GNUC__ > 2  ||  (__GNUC__ == 2  &&  __GNUC_MINOR__ >= 7)) && !defined (__GNUG__)
-# define __unused__  __attribute__((unused))
+# define ctags_unused  __attribute__((unused))
 # define __printf__(s,f)  __attribute__((format (printf, s, f)))
 #else
-# define __unused__
+# define ctags_unused
 # define __printf__(s,f)
 #endif
 
